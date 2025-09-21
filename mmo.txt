@@ -1,0 +1,7 @@
+Stacks are the right choice for undo/redo functionality because they follow a Last-In, First-Out (LIFO) order. The most recent action is always the first one to be undone, which matches the behavior users expect when they press “Undo.” Similarly, the “Redo” operation re-applies the most recent undone action, which is why a second stack is used.
+
+Queues are better suited for the help desk because customer requests must be handled in the order they arrive. A First-In, First-Out (FIFO) structure ensures that the earliest customer always receives help before later arrivals. This prevents “line cutting” and maintains fairness in service order.
+
+Our custom implementations differ from Python’s built-in lists in that they enforce strict stack and queue behavior without exposing random access or unnecessary list operations. For example, while Python lists can be used to simulate stacks or queues, they are not optimized for it—especially when removing from the front of a list, which is inefficient. By implementing stacks and queues with linked nodes, we ensure O(1) time complexity for push, pop, enqueue, and dequeue operations. This makes our data structures both educational and efficient, while reflecting how these structures are typically designed in lower-level languages.
+
+example
